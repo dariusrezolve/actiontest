@@ -18,7 +18,15 @@ jobs:
 
       - name: Update Changelog
         run: |
-           echo >> test.txt
+          curl -o git-chglog.tar.gz -L https://github.com/git-chglog/git-chglog/releases/download/v0.15.1/git-chglog_0.15.1_linux_amd64.tar.gz
+          tar -xvzf git-chglog.tar.gz
+          chmod u+x git-chglog
+          ./git-chglog -o new_tag_changelog.md ${{ steps.vars.outputs.last_tag }}
+          mv CHANGELOG.md old_changelog.md
+          cat new_tag_changelog.md old_changelog.md > CHANGELOG.md
+          rm git-chglog
+          rm new_tag_changelog.md
+          rm old_changelog.md
       - name: Commit new changelog
         run: |
           echo "${{ github.event.base_ref }}"
