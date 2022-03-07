@@ -12,6 +12,13 @@ jobs:
         with:
           ref: main
 
+      - name: Get Branch
+        run: |
+           raw=$(git branch -r --contains ${{ github.ref }})
+           branch=${raw/origin\/}
+           echo ::set-env name=BRANCH::$branch
+      - run: echo ${{ env.BRANCH }}
+
       - name: Set tag output
         id: vars
         run: echo ::set-output name=last_tag::${{github.ref_name}}
