@@ -14,7 +14,7 @@ jobs:
 
       - name: Get Branch
         run: |
-           raw=$(git branch -r --contains ${{ github.ref }})
+           raw=$(git branch -r --contains "${{ github.ref }}")
            branch=${raw/origin\/}
            echo ::set-env name=BRANCH::$branch
       - run: echo ${{ env.BRANCH }}
@@ -28,7 +28,7 @@ jobs:
            echo >> test.txt
       - name: Commit new changelog
         run: |
-          echo ${{github.base_ref}}
+          echo "${{ github.event.base_ref }}"
           git add test.txt
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
