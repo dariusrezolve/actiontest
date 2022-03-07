@@ -29,8 +29,7 @@ jobs:
           rm old_changelog.md
       - name: Commit new changelog
         run: |
-          echo "${{ github.event.base_ref }}"
-          git add test.txt
+          git add CHANGELOG.md
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
           git commit -m "docs: Updated CHANGELOG for ${{ steps.vars.outputs.last_tag }} "
