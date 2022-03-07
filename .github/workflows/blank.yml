@@ -21,7 +21,7 @@ jobs:
            echo >> test.txt
       - name: Commit new changelog
         run: |
-          echo ${{github}}
+          echo ${{github.base_ref}}
           git add test.txt
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
