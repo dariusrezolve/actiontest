@@ -1,0 +1,28 @@
+name: Test commit
+on:
+  push:
+    # Sequence of patterns matched against refs/tags
+    tags:
+      - "[0-9]+.[0-9]+.[0-9]+" # Push events to matching *, i.e. 20.15.10
+jobs:
+  updateChangelog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: main
+
+      - name: Set tag output
+        id: vars
+        run: echo ::set-output name=last_tag::${{github.ref_name}}
+
+      - name: Update Changelog
+        run: |
+           echo >> test.txt
+      - name: Commit new changelog
+        run: |
+          git add test.txt
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git commit -m "docs: Updated CHANGELOG for ${{ steps.vars.outputs.last_tag }} "
+          git push origin main
