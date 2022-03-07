@@ -8,17 +8,19 @@ jobs:
   updateChangelog:
     runs-on: ubuntu-latest
     steps:
+
+      
       - uses: actions/checkout@v3
         with:
+          fetch-depth: 0
           ref: main
-
       - name: Get Branch
         run: |
+           echo "${{ github.event.base_ref }}"
            raw=$(git branch -r --contains "${{ github.ref }}")
            branch=${raw/origin\/}
-           echo ::set-env name=BRANCH::$branch
-      - run: echo ${{ env.BRANCH }}
-
+           echo ::set-output name=BRANCH::$branch
+      - run: echo ${{ steps.vars.outputs.BRANCH }}
       - name: Set tag output
         id: vars
         run: echo ::set-output name=last_tag::${{github.ref_name}}
