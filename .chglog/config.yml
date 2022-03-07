@@ -1,0 +1,26 @@
+style: github
+template: CHANGELOG.tpl.md
+info:
+  title: CHANGELOG
+  repository_url: https://rezolve.github.com/rezolved/core
+options:
+  tag_filter_pattern: '^[0-9]+\.[0-9]+\.[0-9]+$'
+  sort: "date"
+  commits:
+  commit_groups:
+     title_maps:
+       feat: Features
+       fix: Bug Fixes
+       perf: Performance Improvements
+       refactor: Code Refactoring
+       chore: Chores
+       docs: Documentation
+  header:
+    pattern: "^(\\w*)(?:\\(([\\w\\$\\.\\-\\*\\s]*)\\))?\\:\\s(.*)$"
+    pattern_maps:
+      - Type
+      - Scope
+      - Subject
+  notes:
+    keywords:
+      - BREAKING CHANGE
