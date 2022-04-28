@@ -1,9 +1,9 @@
 
-<a name="1.0.19"></a>
-## [1.0.19] - 2022-04-29
+<a name="1.0.20"></a>
+## [1.0.20] - 2022-04-29
 
-[Unreleased]: https://rezolve.github.com/rezolved/core/compare/1.0.19...HEAD
-[1.0.19]: https://rezolve.github.com/rezolved/core/compare/1.0.18...1.0.19
+[Unreleased]: https://rezolve.github.com/rezolved/core/compare/1.0.20...HEAD
+[1.0.20]: https://rezolve.github.com/rezolved/core/compare/1.0.18...1.0.20
 <a name="unreleased"></a>
 ## [Unreleased]
 
