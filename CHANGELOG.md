@@ -1,12 +1,9 @@
 
-<a name="1.0.16"></a>
-## [1.0.16] - 2022-04-28
-### Documentation
-- Updated CHANGELOG for (472a214)
+<a name="1.0.18"></a>
+## [1.0.18] - 2022-04-29
 
-
-[Unreleased]: https://rezolve.github.com/rezolved/core/compare/1.0.16...HEAD
-[1.0.16]: https://rezolve.github.com/rezolved/core/compare/1.0.15...1.0.16
+[Unreleased]: https://rezolve.github.com/rezolved/core/compare/1.0.18...HEAD
+[1.0.18]: https://rezolve.github.com/rezolved/core/compare/1.0.17...1.0.18
 <a name="unreleased"></a>
 ## [Unreleased]
 
