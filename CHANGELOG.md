@@ -1,12 +1,12 @@
 
-<a name="1.0.11"></a>
-## [1.0.11] - 2022-03-07
+<a name="1.0.12"></a>
+## [1.0.12] - 2022-03-07
 ### Documentation
-- Updated CHANGELOG for 1.0.10 (41d0794)
+- Updated CHANGELOG for 1.0.11 (e332439)
 
 
-[Unreleased]: https://rezolve.github.com/rezolved/core/compare/1.0.11...HEAD
-[1.0.11]: https://rezolve.github.com/rezolved/core/compare/1.0.10...1.0.11
+[Unreleased]: https://rezolve.github.com/rezolved/core/compare/1.0.12...HEAD
+[1.0.12]: https://rezolve.github.com/rezolved/core/compare/1.0.11...1.0.12
 <a name="unreleased"></a>
 ## [Unreleased]
 
