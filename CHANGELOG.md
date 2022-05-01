@@ -1,9 +1,12 @@
 
-<a name="1.0.28"></a>
-## [1.0.28] - 2022-05-01
+<a name="1.0.29"></a>
+## [1.0.29] - 2022-05-01
+### Documentation
+- Updated CHANGELOG for 1.0.28 (b804eca)
 
-[Unreleased]: https://rezolve.github.com/rezolved/core/compare/1.0.28...HEAD
-[1.0.28]: https://rezolve.github.com/rezolved/core/compare/1.0.27...1.0.28
+
+[Unreleased]: https://rezolve.github.com/rezolved/core/compare/1.0.29...HEAD
+[1.0.29]: https://rezolve.github.com/rezolved/core/compare/1.0.28...1.0.29
 <a name="unreleased"></a>
 ## [Unreleased]
 
