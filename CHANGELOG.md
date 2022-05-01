@@ -1,12 +1,12 @@
 
-<a name="1.0.22"></a>
-## [1.0.22] - 2022-05-01
+<a name="1.0.23"></a>
+## [1.0.23] - 2022-05-01
 ### Documentation
-- Updated CHANGELOG for 1.0.21 (177629e)
+- Updated CHANGELOG for 1.0.22 (c5d6cae)
 
 
-[Unreleased]: https://rezolve.github.com/rezolved/core/compare/1.0.22...HEAD
-[1.0.22]: https://rezolve.github.com/rezolved/core/compare/1.0.21...1.0.22
+[Unreleased]: https://rezolve.github.com/rezolved/core/compare/1.0.23...HEAD
+[1.0.23]: https://rezolve.github.com/rezolved/core/compare/1.0.22...1.0.23
 <a name="unreleased"></a>
 ## [Unreleased]
 
