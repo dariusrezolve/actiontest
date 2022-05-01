@@ -18,7 +18,7 @@ jobs:
       - name: IsMain 
         id: mn
         run: |
-          git branch --points-at ${{ steps.br.sha }}
+          git branch --points-at ${{ steps.br.outpputs.sha }}
       - name: Set tag output
         id: vars
         run: echo ::set-output name=last_tag::${{github.ref_name}}
