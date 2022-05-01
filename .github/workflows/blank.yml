@@ -12,13 +12,13 @@ jobs:
         with:
           fetch-depth: 0
           ref: main
-      - name: Get ref
+      - name: Get sha
         id: br
-        run: echo ::set-output name=bracch::${{github.ref}}
-      - name: Get main 
+        run: echo ::set-output name=sha::"git rev-list -n 1 ${{github.ref}}"
+      - name: IsMain 
         id: mn
         run: |
-          git symbolic-ref --short HEAD
+          git branch --points-at ${{ steps.br.sha }}
       - name: Set tag output
         id: vars
         run: echo ::set-output name=last_tag::${{github.ref_name}}
