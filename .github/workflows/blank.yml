@@ -12,9 +12,13 @@ jobs:
         with:
           fetch-depth: 0
           ref: main
-      - name: Get branch
+      - name: Get ref
         id: br
         run: echo ::set-output name=bracch::${{github.ref}}
+      - name: Get main 
+        id: mn
+        run: |
+          git symbolic-ref --short HEAD
       - name: Set tag output
         id: vars
         run: echo ::set-output name=last_tag::${{github.ref_name}}
