@@ -14,7 +14,7 @@ jobs:
           ref: main
       - name: Get sha
         id: br
-        run: echo ::set-output name=sha::"git rev-list -n 1 ${{github.ref}}"
+        run: echo "::set-output name=sha::$(git rev-list -n 1 ${{github.ref}})"
       - name: IsMain 
         id: mn
         run: |
