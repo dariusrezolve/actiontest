@@ -18,12 +18,12 @@ jobs:
       - name: Get branches for sha
         id: cond
         run: |
-          echo $(git branch --points-at ${{ steps.br.outputs.sha }})
+          echo "$(git branch --points-at ${{ steps.br.outputs.sha }})"
           echo "::set-output name=branch::$(git branch --points-at ${{ steps.br.outputs.sha }})" 
       - name: Set tag output
         id: vars
         run: |
-          echo ${{ steps.cond.outputs.branch }}
+          echo "${{ steps.cond.outputs.branch }}"
           echo ::set-output name=last_tag::${{github.ref_name}}
 
       - name: Update Changelog
