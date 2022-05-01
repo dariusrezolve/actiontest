@@ -1,16 +1,9 @@
 
-<a name="1.0.24"></a>
-## [1.0.24] - 2022-04-29
-### Documentation
-- Updated CHANGELOG for 1.0.22 (c5d6cae)
-- Updated CHANGELOG for 1.0.21 (177629e)
-- Updated CHANGELOG for 1.0.20 (45ca4ad)
-- Updated CHANGELOG for 1.0.19 (33ae537)
-- Updated CHANGELOG for 1.0.18 (a63babf)
+<a name="1.0.28"></a>
+## [1.0.28] - 2022-05-01
 
-
-[Unreleased]: https://rezolve.github.com/rezolved/core/compare/1.0.24...HEAD
-[1.0.24]: https://rezolve.github.com/rezolved/core/compare/1.0.18...1.0.24
+[Unreleased]: https://rezolve.github.com/rezolved/core/compare/1.0.28...HEAD
+[1.0.28]: https://rezolve.github.com/rezolved/core/compare/1.0.27...1.0.28
 <a name="unreleased"></a>
 ## [Unreleased]
 
