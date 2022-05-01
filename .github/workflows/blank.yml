@@ -18,9 +18,9 @@ jobs:
       - name: Get branches for sha
         id: cond
         run: |
-          git branch --points-at ${{ steps.br.outputs.sha }}
-          echo "$(git branch --points-at ${{ steps.br.outputs.sha }})"
-          echo "::set-output name=branch::$(git branch --points-at ${{ steps.br.outputs.sha }})" 
+          git branch --contains ${{ steps.br.outputs.sha }}
+          echo "$(git branch  --contains ${{ steps.br.outputs.sha }})"
+          echo "::set-output name=branch::$(git branch  --contains ${{ steps.br.outputs.sha }})" 
       - name: Set tag output
         id: vars
         run: |
