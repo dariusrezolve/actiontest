@@ -1,9 +1,13 @@
 
-<a name="1.0.40"></a>
-## [1.0.40] - 2022-05-01
+<a name="1.1.7"></a>
+## [1.1.7] - 2022-05-01
+### Documentation
+- Updated CHANGELOG for 1.0.40 (f99c146)
+- Updated CHANGELOG for 1.1.6 (5f60064)
 
-[Unreleased]: https://rezolve.github.com/rezolved/core/compare/1.0.40...HEAD
-[1.0.40]: https://rezolve.github.com/rezolved/core/compare/1.1.3...1.0.40
+
+[Unreleased]: https://rezolve.github.com/rezolved/core/compare/1.1.7...HEAD
+[1.1.7]: https://rezolve.github.com/rezolved/core/compare/1.1.4...1.1.7
 <a name="unreleased"></a>
 ## [Unreleased]
 
